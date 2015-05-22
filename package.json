@@ -1,7 +1,7 @@
 {
   "name": "grunt-add-view",
   "version": "0.0.1",
-  "description": "Input html files and out put a js file that exports all the html as a object of the for {filename:html text}. It is intended to be used as a view object in single page web apps.",
+  "description": "Input html files and output a js file that exports all of the html as an object in the form {filename:html text}. It is intended to be used as a view object in single page web apps.",
   "homepage": "https://github.com/dcorns/grunt-add-view",
   "repository": "https://github.com/dcorns/grunt-add-view",
   "author": {
