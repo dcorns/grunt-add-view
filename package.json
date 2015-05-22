@@ -1,0 +1,31 @@
+{
+  "name": "grunt-add-view",
+  "version": "0.0.1",
+  "description": "Input html files and out put a js file that exports all the html as a object of the for {filename:html text}. It is intended to be used as a view object in single page web apps.",
+  "homepage": "https://github.com/dcorns/grunt-add-view",
+  "repository": "https://github.com/dcorns/grunt-add-view",
+  "author": {
+    "name": "Dale Corns",
+    "email": "codefellow@gmail.com",
+    "url": "http://www.dalecorns.com"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.12.3"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt": "~0.4.2",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
