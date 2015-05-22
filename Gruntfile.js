@@ -31,25 +31,35 @@ module.exports = function (grunt) {
       tests: ['tmp']
     },
 
-    // Configuration to be run (and then tested).
-    add_view: {
-      default_options: {
-        options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+    add_view:{
+      dist: {
+        files: {'tmp/view1.js': 'test/fixtures/**/*.html'}
       },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+      dev: {
+        files: {'tmp/view2.js': ['test/fixtures/loginView.html', 'test/fixtures/openView.html']}
       }
     },
+    // Configuration to be run (and then tested).
+    //add_view: {
+    //  dist:{
+    //    files: {'tmp/views1.js': ['test/fixtures/loginView.html', 'test/fixtures/openView.html']
+    //  },
+    //  dev:{
+    //    files: {'tmp/views2.js': ['test/fixtures/loginView.html', 'test/fixtures/openView.html']
+    //  }
+    //},
+    //add_view: {
+    //  default_options: {
+    //    files: {
+    //      'tmp/default_options': ['test/fixtures/loginView.html', 'test/fixtures/openView.html']
+    //    }
+    //  },
+    //  custom_options: {
+    //    files: {
+    //      'tmp/custom_options': ['test/fixtures/loginView.html', 'test/fixtures/openView.html']
+    //    }
+    //  }
+    //},
 
     // Unit tests.
     nodeunit: {
